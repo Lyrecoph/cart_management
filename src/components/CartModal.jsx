@@ -4,7 +4,6 @@ import Cart from './Cart';
 
 const CartModal = forwardRef(function Modal({title, actions },ref) {
   const dialog = useRef();
-  const {} = useContext(CartContext)
 
   useImperativeHandle(ref, () => {
     return {
