@@ -69,8 +69,16 @@ function App() {
     });
   }
 
+  // permet de stocker les produits et la fonction qui permet 
+  // d'ajouter un produit dans le panier qui peut être ensuite
+  // utiliser par tout les autres composants
+  const ctxValue = {
+    items: shoppingCart.items,
+    addItemToCart: handleAddItemToCart
+  }
+
   return (
-    <CartContext.Provider value={{items: []}}>
+    <CartContext.Provider value={ctxValue}>
       <Header
         cart={shoppingCart}
         onUpdateCartItemQuantity={handleUpdateCartItemQuantity}

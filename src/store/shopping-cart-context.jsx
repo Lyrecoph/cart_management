@@ -5,5 +5,6 @@ import { createContext } from "react";
 // une valeur initiale qui peut être fournie à plusieurs composants 
 export const CartContext = createContext({
     // stock les articles de mon panier d'achat
-    items: []
+    items: [],
+    addItemToCart: () => {},
 })
