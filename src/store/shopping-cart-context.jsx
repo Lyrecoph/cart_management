@@ -7,4 +7,5 @@ export const CartContext = createContext({
     // stock les articles de mon panier d'achat
     items: [],
     addItemToCart: () => {},
+    updateCartItemQuantity: () => {}
 })
