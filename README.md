@@ -48,9 +48,13 @@ npm run dev
 
 **src/**
 **components/ :** Contains the various React components, such as Cart, Product, Header, etc.
+
 **store/ :** Contains the state management logic for the shopping cart.
+
 **assets/ :** Folder for resources such as images or styles.
+
 **App.jsx:** Main component of the application.
+
 **main.jsx :** Project entry point.
 
 
